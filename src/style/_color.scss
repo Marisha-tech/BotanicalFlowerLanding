@@ -1,0 +1,33 @@
+/* Таблицы стилей Sass */
+/* Адрес цветовой схемы: https://colorscheme.ru/#2X21T9krlw0w0 */
+
+
+/* HEX коды */
+
+$color-primary-0: #709e81;	/* Основной Цвет */
+$color-primary-1: #5d7666;
+$color-primary-2: #24673d;
+$color-primary-3: #a1cfb2;
+$color-primary-4: #adcfba;
+
+$color-complement-0: #daa59a;	/* Дополнительный Цвет */
+$color-complement-1: #a38680;
+$color-complement-2: #8e4232;
+$color-complement-3: #ecc2b9;
+$color-complement-4: #eccdc7;
+
+
+/* RGBA коды */
+
+$color-primary-0: rgba(112, 158, 129, 1);	/* Основной Цвет */
+$color-primary-1: rgba( 93, 118, 102, 1);
+$color-primary-2: rgba( 36, 103,  61, 1);
+$color-primary-2-opacity: rgba( 36, 103,  61, .7);
+$color-primary-3: rgba(161, 207, 178, 1);
+$color-primary-4: rgba(173, 207, 186, 1);
+
+$color-complement-0: rgba(218, 165, 154, 1);	/* Дополнительный Цвет */
+$color-complement-1: rgba(163, 134, 128, 1);
+$color-complement-2: rgba(142,  66,  50, 1);
+$color-complement-3: rgba(236, 194, 185, 1);
+$color-complement-4: rgba(236, 205, 199, 1);

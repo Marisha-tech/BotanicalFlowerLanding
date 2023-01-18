@@ -12,6 +12,10 @@
   outline: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:focus, a:active {
   outline: none;
 }
@@ -62,5 +66,6 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
-  font-weight: 400;
+  //font-weight: 400;
+  font-weight: inherit;
 }

@@ -1,34 +1,557 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="вёрстка, HTML, CSS, блог">
     <meta name="description" content="Блог о процессе обучения веб-технологиям">
-    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-    <link rel="icon" href="img/favicon.png" type="image/png">
-
-    <title>Title</title>
+    <title>Интернет-магазин семян «botanical-flower» - купить семена в Москве и магазинах России, доставка
+        почтой</title>
 </head>
 <body>
 <header class="header">
-    <div class="header__logo"></div>
-    <nav class="header__nav"></nav>
+    <a class="header__logo" href="">
+        <svg>
+            <use xlink:href="/src/img/sprite.svg#botanical"></use>
+        </svg>
+    </a>
+    <div class="header__menu menu">
+        <div class="menu__btn">
+            <div class="menu__title">Меню</div>
+            <div class="menu__icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav class="menu__body">
+            <div class="menu__content">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#about" class="menu__link">О нас</a></li>
+                    <li class="menu__item"><a href="#service" class="menu__link">Все необходимое</a></li>
+                    <li class="menu__item"><a href="#works" class="menu__link">Наши семена</a></li>
+                    <li class="menu__item"><a href="#clients" class="menu__link">Сотрудничаем</a></li>
+                    <li class="menu__item"><a href="#contact" class="menu__link">Остались вопросы?</a></li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto commodi consequatur
+                    dolores ipsam laudantium maxime natus sit sunt veniam.</p>
+                <ul class="menu-social">
+                    <li class="menu-social__item">
+                        <a href="/" class="menu-social__link menu-social__link&#45;&#45;ok">
+                            <svg>
+                                <use xlink:href="/src/img/sprite.svg#telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-social__item">
+                        <a href="/" class="menu-social__link menu-social__link&#45;&#45;instagram">
+
+                            <svg>
+                                <use xlink:href="/src/img/sprite.svg#instagram"></use>
+                            </svg>
+                        </a></li>
+                    <li class="menu-social__item">
+                        <a href="/" class="menu-social__link menu-social__link&#45;&#45;vk">
+
+                            <svg>
+                                <use xlink:href="/src/img/sprite.svg#vk"></use>
+                            </svg>
+                        </a></li>
+                    <li class="menu-social__item">
+                        <a href="/" class="menu-social__link menu-social__link&#45;&#45;yandex">
+
+                            <svg>
+                                <use xlink:href="/src/img/sprite.svg#yandex"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-social__item">
+                        <a href="/" class="menu-social__link menu-social__link&#45;&#45;ok">
+
+                            <svg>
+                                <use xlink:href="/src/img/sprite.svg#odnoklassniki"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 </header>
 <main>
-    <!-- выделяет основное содержание страницы, которое не повторяется на других страницах. И обычно на странице используется один -->
-    <section class="home">
-        <div class="img"></div>
+    <section id="home" class="home">
+        <div class="overlay"></div>
+        <div class="container-fluid">
+            <div class="home__content">
+                <div class="home__block _anim-items _anim-no-hide">
+                    <span class="home__web">botanical-flower.ru</span>
+                    <h1 class="home__title">
+                        Профессиональный магазин по продаже семян и сопутствующих товаров для сада и огорода
+                    </h1>
+                    <div class="home__content-btn">
+                        <a href="#works" class="btn btn--about">Купить семена</a>
+                        <a href="#about" class="btn btn--about">О нас</a>
+                    </div>
+                </div>
+                <div class="home__social">
+                    <ul class="social-list">
+                        <li class="social-list__item">
+                            <a href="/" class="social-list__link social-list__link&#45;&#45;ok">
+                                <span>Telegram</span>
+                                <svg>
+                                    <use xlink:href="/src/img/sprite.svg#telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="/" class="social-list__link social-list__link&#45;&#45;instagram">
+                                <span>Instagram</span>
+                                <svg>
+                                    <use xlink:href="/src/img/sprite.svg#instagram"></use>
+                                </svg>
+                            </a></li>
+                        <li class="social-list__item">
+                            <a href="/" class="social-list__link social-list__link&#45;&#45;vk">
+                                <span>Vk</span>
+                                <svg>
+                                    <use xlink:href="/src/img/sprite.svg#vk"></use>
+                                </svg>
+                            </a></li>
+                        <li class="social-list__item">
+                            <a href="/" class="social-list__link social-list__link&#45;&#45;yandex">
+                                <span>Yandex</span>
+                                <svg>
+                                    <use xlink:href="/src/img/sprite.svg#yandex"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="/" class="social-list__link social-list__link&#45;&#45;ok">
+                                <span>Odnoklassniki</span>
+                                <svg>
+                                    <use xlink:href="/src/img/sprite.svg#odnoklassniki"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
-    <!-- /.home -->
-    <section class="about"></section>
-    <!-- /.about -->
+    <section id="about" class="about">
+        <div class="container about__container">
+            <h2 class="about__title _anim-items _anim-no-hide">О нас</h2>
+            <div class="about__description _anim-items _anim-no-hide">
+                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur autem
+                    commodi doloremque eum inventore officiis praesentium! Accusamus eaque eius impedit ipsa non nulla
+                    sunt
+                    suscipit totam. Alias aspernatur commodi consectetur cum delectus deserunt dolorum et maiores
+                    perspiciatis, possimus quisquam quod repellendus tempore ullam velit vero voluptas voluptatem
+                    voluptates? Fugit, nemo.</P>
+            </div>
+            <div class="about__stats">
+                <div class="about__stats-col">
+                    <div class="about__stats-count _anim-items _anim-no-hide" data-max="234"></div>
+                    <h3 class="about__stats-text">Text</h3>
+                </div>
+                <div class="about__stats-col">
+                    <div class="about__stats-count _anim-items _anim-no-hide" data-max="78"></div>
+                    <h3 class="about__stats-text">Text</h3>
+                </div>
+                <div class="about__stats-col">
+                    <div class="about__stats-count _anim-items _anim-no-hide" data-max="123"></div>
+                    <h3 class="about__stats-text">Text</h3>
+                </div>
+                <div class="about__stats-col">
+                    <div class="about__stats-count _anim-items _anim-no-hide" data-max="12"></div>
+                    <h3 class="about__stats-text">Text</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="service" class="service">
+        <div class="container service__container">
+            <h2 class="service__title _anim-items _anim-no-hide">У нас есть все необходимое для сада и огорода</h2>
+            <div class="service__list">
+                <div class="service__col _anim-items _anim-no-hide">
+                    <div class="service__col-icon">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#seeds"></use>
+                        </svg>
+                    </div>
+                    <div class="service__col-text">
+                        <h3 class="service__col-title">Семена овощей и ягодных культур</h3>
+                        <div class="service__col-description">
+                            Мы предлагаем как проверенные временем сорта, так и новейшие гибриды, дающие высокий урожай.
+                            Семена овощей подходят для выращивания в различных почвенно-климатических регионах России.
+                            Тщательный отбор и контроль качества обеспечивает всхожесть на уровне 95–97 %.
+                        </div>
+                    </div>
 
-    <!-- Тег <aside> включает в себя дополнительное содержание, не связанное напрямую с основным. Такие блоки ещё часто называют «сайдбарами» или боковыми панелями. -->
+                </div>
+                <div class="service__col _anim-items _anim-no-hide">
+                    <div class="service__col-icon">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#parsley"></use>
+                        </svg>
+                    </div>
+                    <div class="service__col-text">
+                        <h3 class="service__col-title">Зелень и пряно-ароматические культуры</h3>
+                        <div class="service__col-description">
+                            Группа пряно-вкусовых культур объединяет растения из различных семейств, обладающие высоким
+                            содержанием ароматических масел и способные серьезно повлиять на вкус пищи. В повседневной
+                            жизни мы просто называем их пряными растениями.
+                        </div>
+                    </div>
+
+                </div>
+                <div class="service__col _anim-items _anim-no-hide">
+                    <div class="service__col-icon">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#leaves"></use>
+                        </svg>
+                    </div>
+                    <div class="service__col-text">
+                        <h3 class="service__col-title">Цветы</h3>
+                        <div class="service__col-description">Семена цветов отличаются высокими характеристиками
+                            всхожести. Благодаря непревзойденному качеству и широкому ассортименту, посадочный материал
+                            производителя пользуется неизменным покупательским спросом.
+                        </div>
+                    </div>
+
+                </div>
+                <div class="service__col _anim-items _anim-no-hide">
+                    <div class="service__col-icon">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#care"></use>
+                        </svg>
+                    </div>
+                    <div class="service__col-text">
+                        <h3 class="service__col-title">Защита растений</h3>
+                        <div class="service__col-description">Средства защиты растений и человека – это вещества или
+                            приспособления, которые предотвращают порчу урожая и нанесение вреда культурным растениям
+                            насекомыми и грызунами.
+                        </div>
+                    </div>
+
+                </div>
+                <div class="service__col _anim-items _anim-no-hide">
+                    <div class="service__col-icon">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#fertilizer"></use>
+                        </svg>
+                    </div>
+                    <div class="service__col-text">
+                        <h3 class="service__col-title">Удобрения</h3>
+                        <div class="service__col-description">Удобрения – средства, предназначенные для активизации
+                            роста и развития овощных и декоративных кустарников и деревьев. У нас вы можете купить
+                            популярную продукцию надежных и проверенных производителей.
+                        </div>
+                    </div>
+
+                </div>
+                <div class="service__col _anim-items _anim-no-hide">
+                    <div class="service__col-icon">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#watering_can"></use>
+                        </svg>
+                    </div>
+                    <div class="service__col-text">
+                        <h3 class="service__col-title">Товары для рассады</h3>
+                        <div class="service__col-description">Пластиковые изделия в качестве аксессуаров для помощи
+                            садоводам и огородникам пользуются сегодня большим спросом. У нас вы можете купить все
+                            необходимое для разметки площади посадки, поддержки высоких стеблей культур и т. д. Вся
+                            продукция безопасна для человека и окружающей среды.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="works" class="works">
+        <div class="works__intro">
+            <div class="works__container">
+                <h2 class="works__title _anim-items _anim-no-hide">Мы любим то, что выращиваем</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="works__section">
+                <div class="works__item _anim-items _anim-no-hide">
+                    <a class="works__link" href="#">
+                        <span class="works__item-title">Огурец</span>
+                        <img src="/src/img/cucumber.jpg" alt="Cucumber" title="Cucumber">
+                    </a>
+                </div>
+                <div class="works__item _anim-items _anim-no-hide">
+                    <a class="works__link" href="#">
+                        <span class="works__item-title">Зелень</span>
+                        <img src="/src/img/parsley.jpg" alt="Parsley" title="Parsley">
+                    </a>
+                </div>
+                <div class="works__item _anim-items _anim-no-hide">
+                    <a class="works__link" href="#">
+                        <span class="works__item-title">Арбуз</span>
+                        <img src="/src/img/watermelon.jpg" alt="Watermelon" title="Watermelon">
+                    </a>
+                </div>
+                <div class="works__item _anim-items _anim-no-hide">
+                    <a class="works__link" href="#">
+                        <span class="works__item-title">Перец</span>
+                        <img src="/src/img/pepper.jpg" alt="Pepper" title="Pepper">
+                    </a>
+                </div>
+                <div class="works__item _anim-items _anim-no-hide">
+                    <a class="works__link" href="#">
+                        <img src="/src/img/eggplant.jpg" alt="Eggplant" title="Eggplant">
+                        <span class="works__item-title">Баклажан</span>
+                    </a>
+                </div>
+                <div class="works__item _anim-items _anim-no-hide">
+                    <a class="works__link" href="#">
+                        <img src="/src/img/zucchini.jpg" alt="Zucchini" title="Zucchini">
+                        <span class="works__item-title">Кабачок</span>
+                    </a>
+                </div>
+                <div class="works__item _anim-items _anim-no-hide">
+                    <a class="works__link" href="#">
+                        <img src="/src/img/strawberry.jpg" alt="Strawberry" title="Strawberry">
+                        <span class="works__item-title">Ягода</span>
+                    </a>
+                </div>
+                <div class="works__item _anim-items _anim-no-hide">
+                    <a class="works__link" href="#">
+                        <img src="/src/img/tomato.jpg" alt="Tomato" title="Tomato">
+                        <span class="works__item-title">Томат</span>
+                    </a>
+                </div>
+                <div class="works__item _anim-items _anim-no-hide">
+                    <a class="works__link" href="#">
+                        <img src="/src/img/melon.jpg" alt="Melon" title="Melon">
+                        <span class="works__item-title">Дыня</span>
+                    </a>
+                </div>
+                <div class="works__item _anim-items _anim-no-hide">
+                    <a class="works__link" href="#">
+                        <img src="/src/img/grapes.jpg" alt="Grapes" title="Grapes">
+                        <span class="works__item-title">Виноград</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="clients" class="clients">
+        <div class="container clients__container">
+            <h2 class="clients__title _anim-items _anim-no-hide">Сотрудничаем</h2>
+            <!--            <div class="slider-wrapper">-->
+            <div class="slider slider-container _anim-items _anim-no-hide">
+                <div class="slider-track">
+                    <div class="slider-item">
+                        <p class="slider__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+                            consequuntur corporis esse et mollitia quaerat quam quos reprehenderit sint unde?</p>
+                        <div class="slider__title">ФИО1</div>
+                    </div>
+                    <div class="slider-item">
+                        <p class="slider__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo,
+                            reprehenderit.</p>
+                        <div class="slider__title">ФИО2</div>
+                    </div>
+                    <div class="slider-item">
+                        <p class="slider__descr">Lorem ipsum dolor sit amet.</p>
+                        <div class="slider__title">ФИО3</div>
+                    </div>
+                    <div class="slider-item">
+                        <p class="slider__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="slider__title">ФИО4</div>
+                    </div>
+                    <div class="slider-item">
+                        <p class="slider__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Doloremque inventore ipsum ratione?</p>
+                        <div class="slider__title">ФИО5</div>
+                    </div>
+                    <div class="slider-item">
+                        <p class="slider__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Accusantium ad adipisci aliquam autem commodi consectetur consequatur culpa dolorem
+                            dolores ducimus enim eum facilis fugit harum inventore, ipsum iusto libero magnam
+                            maiores minima molestiae molestias neque nihil nostrum possimus praesentium quae quam
+                            quia ratione repellendus repudiandae sapiente suscipit temporibus velit voluptate!</p>
+                        <div class="slider__title">ФИО6</div>
+                    </div>
+                    <div class="slider-item">
+                        <p class="slider__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Accusantium deserunt distinctio dolor exercitationem facilis, impedit in laborum
+                            laudantium magni officia praesentium quasi quidem ratione sequi voluptatibus. Doloremque
+                            eaque laborum voluptatibus.</p>
+                        <div class="slider__title">ФИО7</div>
+                    </div>
+                    <div class="slider-item">
+                        <p class="slider__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex hic
+                            laudantium minima, modi quaerat sunt.</p>
+                        <div class="slider__title">ФИО8</div>
+                    </div>
+                    <div class="slider-item">
+                        <p class="slider__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                            ducimus exercitationem ipsam natus nemo nesciunt quas veritatis!</p>
+                        <div class="slider__title">ФИО9</div>
+                    </div>
+                </div>
+                <div class="slider-buttons">
+                    <button class="slider-btn btn-prev">
+                        <svg>
+                            <use xlink:href="/src/img/sprite.svg#arrow"></use>
+                        </svg>
+                    </button>
+                    <button class="slider-btn btn-next">
+                        <svg>
+                            <use xlink:href="/src/img/sprite.svg#arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="timeVisual"></div>
+            <!--            </div>-->
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="overlay"></div>
+
+        <div class="container ">
+            <div class="contact__container">
+                <h2 class="contact__title _anim-items _anim-no-hide">Остались вопросы?</h2>
+                <div class="contact__content">
+                    <div class="contact__primary">
+                        <h3 class="contact__primary-title">Заполните форму</h3>
+                        <form name="contactForm" method="post" id="contactForm" action="#">
+                            <fieldset>
+
+                                <label for="contactName"></label>
+                                <input name="contactName" type="text" id="contactName" placeholder="Имя" value=""
+                                       minlength="2" required="" aria-required="true" class="contact__full">
+
+
+                                <label for="contactEmail"></label>
+                                <input name="contactEmail" type="email" id="contactEmail" placeholder="Email"
+                                       value="" required="" aria-required="true" class="contact__full">
+
+                                <textarea name="contactMessage" id="contactMessage" placeholder="Комментарий" rows="10"
+                                          cols="50" required="" aria-required="true" class="contact__full"></textarea>
+
+
+                                <button class="btn btn&#45;&#45;primary">Отправить</button>
+                                <div class="submit-loader">
+                                    <div class="text-loader">Sending...</div>
+                                    <div class="s-loader">
+                                        <div class="bounce1"></div>
+                                        <div class="bounce2"></div>
+                                        <div class="bounce3"></div>
+                                    </div>
+                                </div>
+
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="contact__secondary secondary">
+                        <h3 class="contact__secondary-title">Контакты</h3>
+                        <div class="secondary__block">
+                            <h4 class="secondary__title">Где нас найти</h4>
+                            <p> г. Новосибирск</p>
+                        </div>
+                        <div class="secondary__block">
+                            <h4 class="secondary__title">Email</h4>
+                            <p> contact@.com<br> info@.com</p>
+                        </div>
+                        <div class="secondary__block">
+                            <h4 class="secondary__title">Телефон</h4>
+                            <p> Телефон: (+7) 111 111 11 11</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
-<footer><!-- описывает заключительную часть страницы, или «подвал» -->
-    Подвал сайта
-    <div class="image"></div>
-</footer>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__logo">
+            <svg>
+                <use xlink:href="/src/img/sprite.svg#botanical"></use>
+            </svg>
+        </div>
+        <div class="footer__top">
+            <div class="footer__col">
+                <ul class="footer-list">
+                    <li class="footer-list__item"><a href="">Интернет-магазин</a></li>
+                    <li class="footer-list__item"><a href="">О нас</a></li>
+                    <li class="footer-list__item"><a href="">Клиенты</a></li>
+                    <li class="footer-list__item"><a href="">Остались вопросы?</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <ul class="footer__social-list social-list">
+                    <li class="footer__social-list__item social-list__item">
+                        <a href="/" class="social-list__link social-list__link&#45;&#45;ok">
 
+                            <svg>
+                                <use xlink:href="/src/img/sprite.svg#telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-list__item social-list__item">
+                        <a href="/" class="social-list__link social-list__link&#45;&#45;instagram">
+
+                            <svg>
+                                <use xlink:href="/src/img/sprite.svg#instagram"></use>
+                            </svg>
+                        </a></li>
+                    <li class="footer__social-list__item social-list__item">
+                        <a href="/" class="social-list__link social-list__link&#45;&#45;vk">
+
+                            <svg>
+                                <use xlink:href="/src/img/sprite.svg#vk"></use>
+                            </svg>
+                        </a></li>
+                    <li class="footer__social-list__item social-list__item">
+                        <a href="/" class="social-list__link social-list__link&#45;&#45;yandex">
+
+                            <svg>
+                                <use xlink:href="/src/img/sprite.svg#yandex"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-list__item social-list__item">
+                        <a href="/" class="social-list__link social-list__link&#45;&#45;ok">
+
+                            <svg>
+                                <use xlink:href="/src/img/sprite.svg#odnoklassniki"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            copyright
+        </div>
+    </div>
+</footer>
+<div class="scroll-up">
+    <svg class="scroll-up__svg" viewBox="-2 -2 52 52">
+        <path class="scroll-up__svg-path"
+              d="
+                M24,0
+                a24,24 0 0,1 0,48
+                a24,24 0 0,1 0,-48"/>
+    </svg>
+</div>
+<div class="modals">
+    <div class="modal">
+        <p>На сайте botanical-flower.ru только что купили</p>
+        <p class="modal__title"></p>
+    </div>
+</div>
 </body>
 </html>
